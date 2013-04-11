@@ -31,11 +31,11 @@ module.exports = function(grunt) {
           mode: 'gzip',
         },
         files: [
-          {src: ['email.inline.html', dest: 'email.html', filter: 'isFile'},
+          {src: ['email.inline.html'], dest: 'email.html', filter: 'isFile'},
           {src: ['assets/img/**'], dest: 'assets/img/'},
         ],
       }
-    }
+    },
     watch: {
       less: {
         files: [
