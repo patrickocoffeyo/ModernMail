@@ -1,0 +1,65 @@
+//Include the stuff we need:
+@import "bootstrap/variables.less";
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+body {}
+#main {}
+.container {width: 700px;}
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+#header {}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+#content {}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+#footer {}
+
+
+
+/* ==========================================================================
+   Client specific fixes and defaults
+   ========================================================================== */
+//Force Outlook to provide a "view in browser" menu link.
+#outlook a {padding: 0;}
+
+//Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design
+body{width: 100%!important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;}
+
+//Force Hotmail to display emails at full width
+.ExternalClass {width:100%;}
+
+//Force Hotmail to display normal line spacing.
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {line-height: 100%;}
+
+table td {border-collapse: collapse;}
+
+//Force color of tel and sms anchors
+a[href^="tel"], a[href^="sms"] {
+  text-decoration: none;
+  color: @textColor;
+  pointer-events: none;
+  cursor: default;
+}
+
+//Surround phone numbers and calendar dates with the .mobile_insert
+.mobile_insert a[href^="tel"], .mobile_insert a[href^="sms"] {
+  text-decoration: default;
+  color: @textColor!important;
+  pointer-events: auto;
+  cursor: default;
+}
+
