@@ -20,8 +20,9 @@
   },
   "devDependencies": {
     "grunt": "~0.4.0",
-    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-watch": "x",
     "grunt-contrib-less": "x",
-    "grunt-zip": "x"
+    "grunt-zip": "x",
+    "grunt-inline-css": "x"
   }
 }
