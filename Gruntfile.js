@@ -12,10 +12,17 @@ module.exports = function(grunt) {
         }
       }
     },
+    inlinecss: {
+      default: {
+        files: {
+          'email.inline.html': 'email.html'
+        }
+      }
+    },
     zip: {
       default: {
         src: [
-          'email.html',
+          'email.inline.html',
           'assets/img/',
           'assets/css/style.css'
         ],
@@ -32,8 +39,9 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-inline-css');
   grunt.loadNpmTasks('grunt-zip');
 
-  grunt.registerTask('default', ['less', 'zip']);
+  grunt.registerTask('default', ['less', 'inlinecss', 'zip']);
 
 };
