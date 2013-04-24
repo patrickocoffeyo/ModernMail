@@ -10,8 +10,11 @@ All styling can be done (while running the <code>grunt watch</code> task) to <co
 ##Client-Specific Email Fixes
 Modern Mail includes a number of email client css fixes, (kudos to [HTML Email Boilerplate](http://htmlemailboilerplate.com/), I borrowed some of the fixes from there.)
 
+##CSS Inliner
+When you run <code>grunt</code> an email.inline.html file with all of your LESS/CSS inline will be created/updated. That's what goes into the final zips as well.
+
 ##Archiving
 Run <code>grunt</code> in the project root, and an archive of your email and it's assets will be zipped into <code>/output/final.zip</code>
 
 ##In Progress
-There's a number of things I'm working on right now in Modern Mail, including a CSS Inline task.
+I'm doing testing as I get time to fix issues in this project, and make it as easy as possible to quickly rip out compatable emails.
