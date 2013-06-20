@@ -3929,7 +3929,6 @@ body {
   -ms-text-size-adjust: 100%;
   margin: 0;
   padding: 0;
-  text-align: left;
 }
 .ExternalClass {
   width: 100%;
@@ -3941,6 +3940,12 @@ body {
 .ExternalClass td,
 .ExternalClass div {
   line-height: 100%;
+}
+table {
+  text-align: left;
+}
+table tr {
+  vertical-align: top;
 }
 table td {
   border-collapse: collapse;

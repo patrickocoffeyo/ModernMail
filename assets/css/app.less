@@ -38,9 +38,6 @@ body {
   -ms-text-size-adjust: 100%;
   margin: 0;
   padding: 0;
-
-  //Fix text align issues in Outlook 2003
-  text-align: left;
 }
 
 //Force Hotmail to display emails at full width
@@ -54,7 +51,13 @@ body {
 .ExternalClass td,
 .ExternalClass div {line-height: 100%;}
 
-table td {border-collapse: collapse;}
+table {
+  //Fix text-align issues in Outlook 2003. This can easily be overridden
+  text-align: left;
+
+  tr {vertical-align: top;}
+  td {border-collapse: collapse;}
+}
 
 //Force color of tel and sms anchors
 a[href^="tel"], a[href^="sms"] {
