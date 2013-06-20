@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       default: {
         src: [
           'email.inline.html',
-          'assets/img/',
+          'assets/img/*',
           'assets/css/style.css'
         ],
         dest: 'output/final.zip'
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     },
     watch: {
       less: {
-        files: ['assets/css/app.less'],
+        files: ['assets/css/*.less', 'assets/css/bootstrap/*.less'],
         tasks: ['less']
       }
     },
