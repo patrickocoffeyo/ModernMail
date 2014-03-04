@@ -5,9 +5,7 @@ module.exports = function(grunt) {
       default: {
         files: {
           'assets/css/style.css': [
-            'assets/css/bootstrap/bootstrap.less',
-            '!assets/css/bootstrap/responsive.less',
-            'assets/css/app.less'
+            'assets/less/app.less'
           ],
         }
       }
@@ -26,7 +24,7 @@ module.exports = function(grunt) {
           'assets/img/*',
           'assets/css/style.css'
         ],
-        dest: 'output/final.zip'
+        dest: 'builds/final.zip'
       }
     },
     watch: {
