@@ -3743,6 +3743,9 @@ button.close {
 /* ==========================================================================
    Base
    ========================================================================== */
+body {
+  padding: 20px;
+}
 .container-fluid {
   max-width: 600px;
 }
@@ -3766,7 +3769,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   margin: 0;
-  padding: 0;
 }
 .ExternalClass {
   width: 100%;
